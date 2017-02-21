@@ -1,0 +1,128 @@
+\documentclass[12pt, oneside]{article}   	
+\usepackage{geometry}                		
+\geometry{letterpaper}                   		                		
+\usepackage[parfill]{parskip}    		
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+% For MATLAB
+%\usepackage[framed, useliterate]{mcode}
+\usepackage{listings} % For displaying code
+
+% For algorithms
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\usepackage{hyperref}
+
+%%%% Useful formulas %%%%
+
+\definecolor{red}{rgb}{1,0,0}
+\def\red#1{{\color{red}#1}}
+\definecolor{blu}{rgb}{0,0,1}
+\def\blu#1{{\color{blu}#1}}
+
+\newcommand{\argmin}[1]{\mathop{\hbox{argmin}}_{#1}}
+\newcommand{\argmax}[1]{\mathop{\hbox{argmax}}_{#1}}
+\def\norm#1{\|#1\|}
+\def\R{\mathbb{R}}
+\def\argmax{\mathop{\rm arg\,max}}
+\def\argmin{\mathop{\rm arg\,min}}
+\def\half{\frac 1 2}
+
+\newcommand{\fig}[2]{\includegraphics[width=#1\textwidth]{./#2}}
+\newcommand{\centerfig}[2]{\begin{center}\includegraphics[width=#1\textwidth]{./#2}\end{center}}
+\newcommand{\code}[1]{\lstinputlisting[language=Matlab]{../#1}}
+
+%%%% Assignment Specific Stuff %%%%
+
+\title{Applications of Machine Learning to Stock Market Predictions}
+\author{Anson, Gudbrand and Juan}
+%\date{}
+
+\begin{document}
+\maketitle
+%\section{}
+%\subsection{}
+
+\section{Introduction}
+
+We propose to undertake an exploratory project on the potential impact of machine learning techniques to stock market prediction and analysis. 
+
+The idea of using algorithms to predict the price of assets is as old as the stock exchange itself, and the existing body of work on the subject is huge. Therefore, the first part of our project will be an extensive literature review. We will read and share interesting papers, using our findings to guide the development of the project scope and details.
+
+\blu{Gudbrand's driving question:} With the dawn of the Era of Big Data upon us, I seek to discover if and how a "change in magnitude will produce a change in kind".
+
+\blu{Anson's ...}
+
+\blu{Juan's ...}
+
+...
+
+\section{Literature Review}
+
+There's a lot out there, let's read it all.
+
+Papers: 
+\begin{itemize}
+\item http://www-stat.wharton.upenn.edu/~steele/Courses/434/434Context/EfficientMarket/AndyLoJPM2004.pdf
+
+\item http://www-stat.wharton.upenn.edu/~steele/Courses/434/434Context/EfficientMarket/Granger-stockmarket.pdf
+
+\item ...
+\end{itemize}
+
+Interesting/useful links
+\begin{itemize}
+\item This guy is pretty great: \url{http://www-stat.wharton.upenn.edu/~steele/}
+\item \url{https://www.udacity.com/course/machine-learning-for-trading--ud501}
+\item \url{https://www.quantopian.com/posts/simple-machine-learning-example}
+\item \url{http://www.qminitiative.org/UserFiles/files/S_Cl\%C3\%A9men\%C3\%A7on_ML.pdf}
+\item \url{http://www-stat.wharton.upenn.edu/~steele/Courses/9xx/Resources/MLFinancialApplications/MLFinance.html}
+\item \url{https://www.quora.com/How-do-financial-companies-use-machine-learning}
+\item Our GoogleDrive: \url{https://drive.google.com/drive/folders/0B5_P6FZEZzQxOEN6ZTU1Q1czQTQ?usp=sharing}
+
+\item ...
+
+\end{itemize}
+
+\section{Applications/Implementations/Ideas}
+
+As the famous Oscar Wilde quote goes; "A cynic is a man who knows the price of everything but the value of nothing". In this sense, a ML model can be regarded as the ultimate cynic. The cynic has both advantages and disadvantages compared with the expert investor. Could be interesting to discuss..
+
+\begin{description}
+
+\item[Predictability] How hard is the problem? Almost a philosophical question. 
+
+\item[Clustering] What sort of stocks/bonds/instruments are there? Which models work for different categories?
+
+\item[Feature Selection] Which features are important when it comes to prediction? We see many examples of seemingly godly predictions made based on the most complex features. Is this sort of 'thinking' possible for machines? Take for example the fictional Silicon Valley investor Peter Gregory, who reasons from the popularity of Burger King to the impending surge in periodic cicadas to Indonesian sesame futures. Or hedge fund manager Micheal Burry, one of the few big shot investors to recognize the subprime mortgage crisis long before it happened, just by analyzing the right data.
+
+\item[Prediction techniques] How can we predict the behaviour of a stochastic PDE (Black Scholes')? (Draw inspiration from ML-fluid papers, Juan has some background on this)
+
+\item[Momentum Investing] Gradient step based on today's winners. A potential winning strategy.
+
+\item[Page Rank] Anson has an idea!
+
+\item[Financial Background] The introduction should get the reader up to date on the subject. Efficient markets, price, information, volatility, portfolio, ...
+
+\item[Portfolio Selection] Real-time optimization++
+
+\end{description}
+
+\section{Other}
+
+\begin{itemize}
+
+\item Datasets? Juan has some interesting R packages we could use. 
+
+\item ...
+
+\end{itemize}
+
+\end{document} 
