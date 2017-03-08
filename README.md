@@ -1,16 +1,18 @@
 ## List of Papers
 
-Stock-selection/prediction
-
-[__A SVM Stock Selection Model within PCA__](http://ac.els-cdn.com/S187705091400461X/1-s2.0-S187705091400461X-main.pdf?_tid=3f9102de-029a-11e7-9dd9-00000aacb361&acdnat=1488824897_21fdcac3bed5579329e7d43e1130efc7)
-
-[__Stock Price Prediction Based on SSA and SVM__](http://ac.els-cdn.com/S1877050914004864/1-s2.0-S1877050914004864-main.pdf?_tid=38a3a662-029e-11e7-9d43-00000aab0f26&acdnat=1488826604_5ae06d57dfe72fcfaf541067a9603aa3)
-
-[__A multiple-kernel support vector regression approach for stock market price forecasting__](https://pdfs.semanticscholar.org/c558/a4396d44666a2b86f1d83348edfdb1f6321d.pdf)
++Stock-selection/prediction (room for improvements here..!):
 
 [__Financial time series forecasting using support vector machines__](http://lcsd2.svms.org/finance/Kim2003.pdf)
+**Does just what it says. Potentially useful list of features. Discusses tuning the model parameters and risk minimization**
+
+[__A SVM Stock Selection Model within PCA__](http://ac.els-cdn.com/S187705091400461X/1-s2.0-S187705091400461X-main.pdf?_tid=3f9102de-029a-11e7-9dd9-00000aacb361&acdnat=1488824897_21fdcac3bed5579329e7d43e1130efc7)
+**Quite poorly written and not particularly interesting, but it's something. Main idea is to use PCA for dimensionality reduction/feature selection**
 
 [__Stock Price Forecasting by Hybrid Machine Learning Techniques__](http://www.iaeng.org/publication/IMECS2009/IMECS2009_pp755-760.pdf)
+**A simple ensamble model consisting of Artificial Neural Nets and Decision Trees. Contains references to a plethora of related works. Attempts to rationalize prediction somewhat. **
+
+[__A multiple-kernel support vector regression approach for stock market price forecasting__](https://pdfs.semanticscholar.org/c558/a4396d44666a2b86f1d83348edfdb1f6321d.pdf)
+**Not quite so relevant really. Technical. But interesting to see some of the optimization/kernel stuff we touched on in class being used in practice**
 
 Portfolio Optimization:
 
