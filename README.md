@@ -1,20 +1,20 @@
 ## List of Papers
 
-+Stock-selection/prediction (room for improvements here..!):
++ Stock-selection/prediction (room for improvements here..!):
 
 [__Financial time series forecasting using support vector machines__](http://lcsd2.svms.org/finance/Kim2003.pdf)
-**Does just what it says. Potentially useful list of features. Discusses tuning the model parameters and risk minimization**
+_Does just what it says. Potentially useful list of features. Discusses tuning the model parameters and risk minimization_
 
 [__A SVM Stock Selection Model within PCA__](http://ac.els-cdn.com/S187705091400461X/1-s2.0-S187705091400461X-main.pdf?_tid=3f9102de-029a-11e7-9dd9-00000aacb361&acdnat=1488824897_21fdcac3bed5579329e7d43e1130efc7)
-**Quite poorly written and not particularly interesting, but it's something. Main idea is to use PCA for dimensionality reduction/feature selection**
+_Quite poorly written and not particularly interesting, but it's something. Main idea is to use PCA for dimensionality reduction/feature selection_
 
 [__Stock Price Forecasting by Hybrid Machine Learning Techniques__](http://www.iaeng.org/publication/IMECS2009/IMECS2009_pp755-760.pdf)
-**A simple ensamble model consisting of Artificial Neural Nets and Decision Trees. Contains references to a plethora of related works. Attempts to rationalize prediction somewhat. **
+_A simple ensamble model consisting of Artificial Neural Nets and Decision Trees. Contains references to a plethora of related works. Attempts to rationalize prediction somewhat. _
 
 [__A multiple-kernel support vector regression approach for stock market price forecasting__](https://pdfs.semanticscholar.org/c558/a4396d44666a2b86f1d83348edfdb1f6321d.pdf)
-**Not quite so relevant really. Technical. But interesting to see some of the optimization/kernel stuff we touched on in class being used in practice**
+_Not quite so relevant really. Technical. But interesting to see some of the optimization/kernel stuff we touched on in class being used in practice_
 
-Portfolio Optimization:
++ Portfolio Optimization:
 
 [__Using genetic algorithm to support portfolio optimization for index fund management__](http://ac.els-cdn.com/S0957417404001356/1-s2.0-S0957417404001356-main.pdf?_tid=61fc4414-0065-11e7-a298-00000aab0f02&acdnat=1488582289_943bb9d462a446923eaa71d0e4feefa3)
 
@@ -29,11 +29,12 @@ These two look more like student papers like our own
 
 [__Machine Learning in Stock Price Trend Forecasting__](http://cs229.stanford.edu/proj2013/DaiZhang-MachineLearningInStockPriceTrendForecasting.pdf)
 
-A few more market-theoretical papers on the fundamental question of prediction
++ A few more market-theoretical papers on the fundamental question of prediction
 
 [__Efficient Market Hypothesis and Forecasting__](http://www.sciencedirect.com/science/article/pii/S0169207003000128)
 
 [__Forecasting stock market prices: Lessons for forecasters__](http://www.sciencedirect.com/science/article/pii/016920709290003R)
+_A well written and interesting survey á la 1992 of what the deal is_
 
 ## Buzzwords++
 
