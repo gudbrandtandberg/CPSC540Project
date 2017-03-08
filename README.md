@@ -1,6 +1,6 @@
 ## List of Papers
 
-+ Stock-selection/prediction (room for improvements here..!):
+### Stock-selection/prediction (room for improvements here..!):
 
 [__Financial time series forecasting using support vector machines__](http://lcsd2.svms.org/finance/Kim2003.pdf)
 _Does just what it says. Potentially useful list of features. Discusses tuning the model parameters and risk minimization_
@@ -14,7 +14,7 @@ _A simple ensamble model consisting of Artificial Neural Nets and Decision Trees
 [__A multiple-kernel support vector regression approach for stock market price forecasting__](https://pdfs.semanticscholar.org/c558/a4396d44666a2b86f1d83348edfdb1f6321d.pdf)
 _Not quite so relevant really. Technical. But interesting to see some of the optimization/kernel stuff we touched on in class being used in practice_
 
-+ Portfolio Optimization:
+### Portfolio Optimization:
 
 [__Using genetic algorithm to support portfolio optimization for index fund management__](http://ac.els-cdn.com/S0957417404001356/1-s2.0-S0957417404001356-main.pdf?_tid=61fc4414-0065-11e7-a298-00000aab0f02&acdnat=1488582289_943bb9d462a446923eaa71d0e4feefa3)
 
@@ -29,7 +29,7 @@ These two look more like student papers like our own
 
 [__Machine Learning in Stock Price Trend Forecasting__](http://cs229.stanford.edu/proj2013/DaiZhang-MachineLearningInStockPriceTrendForecasting.pdf)
 
-+ A few more market-theoretical papers on the fundamental question of prediction
+### A few more market-theoretical papers on the fundamental question of prediction
 
 [__Efficient Market Hypothesis and Forecasting__](http://www.sciencedirect.com/science/article/pii/S0169207003000128)
 
