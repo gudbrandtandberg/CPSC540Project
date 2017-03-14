@@ -2,6 +2,10 @@
 
 ### Stock-selection/prediction (room for improvements here..!):
 
+[__Support Vector Machine With Adaptive Parameters in Financial Time Series Forecasting__](no link)
+
+[__SUPPORT VECTOR MACHINE FOR REGRESSION AND APPLICATIONS TO FINANCIAL FORECASTING__](no link)
+
 [__Financial time series forecasting using support vector machines__](http://lcsd2.svms.org/finance/Kim2003.pdf)
 _Does just what it says. Potentially useful list of features. Discusses tuning the model parameters and risk minimization_
 
