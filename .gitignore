@@ -1,4 +1,6 @@
-proposal.aux
-proposal.out
-proposal.synctex.gz
-proposal.log
+Latex/*.log
+Latex/*.aux
+Latex/*.out
+Latex/*.gz
+MLFINANCE_DATA/*
+
