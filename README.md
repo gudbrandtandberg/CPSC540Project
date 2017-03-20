@@ -13,10 +13,17 @@ _Does just what it says. Potentially useful list of features. Discusses tuning t
 _Quite poorly written and not particularly interesting, but it's something. Main idea is to use PCA for dimensionality reduction/feature selection_
 
 [__Stock Price Forecasting by Hybrid Machine Learning Techniques__](http://www.iaeng.org/publication/IMECS2009/IMECS2009_pp755-760.pdf)
-_A simple ensamble model consisting of Artificial Neural Nets and Decision Trees. Contains references to a plethora of related works. Attempts to rationalize prediction somewhat. _
+_A simple ensamble model consisting of Artificial Neural Nets and Decision Trees. Contains references to a plethora of related works. Attempts to rationalize prediction somewhat._ 
 
 [__A multiple-kernel support vector regression approach for stock market price forecasting__](https://pdfs.semanticscholar.org/c558/a4396d44666a2b86f1d83348edfdb1f6321d.pdf)
 _Not quite so relevant really. Technical. But interesting to see some of the optimization/kernel stuff we touched on in class being used in practice_
+
+[__Machine Learning Techniques and Use of Event Information for Stock Market Prediction: A Survey and Evaluation](http://ro.uow.edu.au/cgi/viewcontent.cgi?article=3866&context=commpapers)
+_A survey in the use of ML in predicting the stock market. A little bit outdated (2005) but still useful since it has good references and gives an idea
+of the state of the art in the use of ML 12 years ago._
+
+[__Stock Market Forecasting Using Hidden Markov Model: A New Approach__](http://s3.amazonaws.com/academia.edu.documents/1904664/5kcoxioksgt4hgw.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1490002389&Signature=UlQbdgbhnPuf%2BvLr3O7dBi%2FoxrE%3D&response-content-disposition=inline%3B%20filename%3DStock_Market_Forecasting_Using_Hidden_Ma.pdf)
+_Some of the few papers I've found where they use somehow Markov Chains (The funny thing is that the way mathematicians model stocks is with first order Markov Chains!)_
 
 ### Portfolio Optimization:
 
@@ -40,7 +47,14 @@ These two look more like student papers like our own
 [__Forecasting stock market prices: Lessons for forecasters__](http://www.sciencedirect.com/science/article/pii/016920709290003R)
 _A well written and interesting survey á la 1992 of what the deal is_
 
+[__A Theory of Power Law Distribution in Financial Market Fluctuations__](http://www.nature.com/nature/journal/v423/n6937/abs/nature01624.html)
+_I think this is an interesting paper, since understing the statistical properties of outliers, might give us a more solid way 
+to implement the algorithms._
+
+[__How the Economic Machine Works__](https://www.youtube.com/watch?v=PHe0bXAIuk0)
+_A short video of how the economy works (according to the point of view of a guy that knows what he is talking about)_
 ## Buzzwords++
+
 
 [__Captial Asset Pricing Model__](https://en.wikipedia.org/wiki/Capital_asset_pricing_model)
 
@@ -52,4 +66,5 @@ Apparently a classic of the field, I've got a copy booked at the library.
 [__Mean Variance Optimization__](https://en.wikipedia.org/wiki/Modern_portfolio_theory)
 
 [__The Efficient Frontier__](https://en.wikipedia.org/wiki/Efficient_frontier)
+
 
