@@ -11,7 +11,7 @@ ytrain=table2array(A(:,3));
 k=kernelCreator();
 
 %doing the cross validation
-p=crossValidation(@k.powExp,Xtrain,ytrain,101,2,0.1,1,1e-8);
+%p=crossValidation(@k.powExp,Xtrain,ytrain,101,2,0.1,1,1e-8);
 
 
 
