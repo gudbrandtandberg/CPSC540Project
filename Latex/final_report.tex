@@ -1,61 +1,75 @@
-\documentclass[12pt, twocolumn]{article}   	
-\usepackage{geometry}                		
-\geometry{letterpaper}                   		                		
-\usepackage[parfill]{parskip}    		
-\usepackage{graphicx}
-\usepackage{subfig}
-\usepackage{float}
-\usepackage{color}
-\usepackage{amssymb}
-\usepackage{amsfonts}
+\documentclass{article}
+
 \usepackage{amsmath}
+\usepackage[final]{nips2016}
+\bibliographystyle{unsrtnat}
 
-% For MATLAB
-%\usepackage[framed, useliterate]{mcode}
-\usepackage{listings} % For displaying code
-
-% For algorithms
-\usepackage{algorithm}
-\usepackage{algorithmic}
-
-\usepackage{hyperref}
-
-%%%% Useful formulas %%%%
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{color}
 
 \definecolor{red}{rgb}{1,0,0}
 \def\red#1{{\color{red}#1}}
 \definecolor{blu}{rgb}{0,0,1}
 \def\blu#1{{\color{blu}#1}}
 
-\newcommand{\argmin}[1]{\mathop{\hbox{argmin}}_{#1}}
-\newcommand{\argmax}[1]{\mathop{\hbox{argmax}}_{#1}}
-\def\norm#1{\|#1\|}
-\def\R{\mathbb{R}}
-\def\argmax{\mathop{\rm arg\,max}}
-\def\argmin{\mathop{\rm arg\,min}}
-\def\half{\frac 1 2}
-
-\newcommand{\fig}[2]{\includegraphics[width=#1\textwidth]{./#2}}
-\newcommand{\centerfig}[2]{\begin{center}\includegraphics[width=#1\textwidth]{./#2}\end{center}}
-\newcommand{\code}[1]{\lstinputlisting[language=Matlab]{../#1}}
-
 \title{Machine Learning for Stock Price Prediction}
-\author{Anson, Gudbrand and Juan}
-%\date{}
+
+\author{
+ Juan Garcia\\
+ \texttt{99999999}
+ \And
+ Gudbrand Tandberg \\
+\texttt{83628164}
+ \And
+ Anson Wong\\
+ \texttt{99999999}
+ }
 
 \begin{document}
-\twocolumn[
 
-\begin{@twocolumnfalse}
 \maketitle
+
 \begin{abstract}
-      
+In this paper, we investigate the performance of machine learning models for the task of stock price prediction. After reviewing the basics of stock market prediction, we present an ensemble model that utilizes a variety of ML-techniques to forecast the future price of a given stock.
 \end{abstract}
-\end{@twocolumnfalse}
 
 \section{Introduction}
-\subsection{Related Work}
-\subsection{Contributions}
+At the heart of classical market theory lies "The Efficient Market Hypothesis", which states that markets are \emph{efficient}:
+
+\begin{eqnarray*}
+&&H_{01}: \text{A market is efficient with respect to information set $I_t$ if it is impossible}\\
+&&\text{to make economic profits by trading on the basis of this information set.}
+\end{eqnarray*}
+
+A slightly stronger formulation of this hypothesis is 
+
+\begin{eqnarray*}
+&&H_{02}: \text{Stock prices are a martingale}\\
+&&\text{i.e. } E\lbrack P_{t+1} \,|\, I_t\rbrack = P_t.
+\end{eqnarray*}
+
+The mere existence of profitable investment funds provide enough counter-evidence to this hypothesis to suggest the following partial refutation of the EMH: 
+
+\begin{eqnarray*}
+H_{1}: \text{there exist at least \emph{some times} where at least \emph{some part} of the market is \emph{inefficient}".}
+\end{eqnarray*}
+
+Working from this hypothesis, market investors attempt to predict markets using a combination of three broad categories of prediction methodologies: fundamental analysis, technical analysis, and data mining technologies. Fundamental analysts are concerned with the company that underlies the stock itself. Technical analysts are not concerned with any of the company's fundamentals. Instead, they seek to determine the future price of a stock based solely on the (potential) trends of the past price (a form of time series analysis). With the advent of the digital computer, stock market prediction has since moved into the technological realm, where for example internet-based data sources and machine learning algorithms are used for predicting the future. 
+
+The stock market is essentially dynamic, non-linear, complicated, nonparametric, and chaotic in nature. The time series are multi-stationary, noisy, random, and has frequent structural breaks. In addition, stock market?s movements are affected by many macro-economical factors such as political events, firms? policies, general economic conditions, commodity price index, bank rate, bank exchange rate, investors? expectations, institutional investors? choices, movements of other stock market, psychology of investors, etc. It is our belief that the only reasonable way of overcoming all these difficulties is by harnessing the power of big data and modern machine learning algorithms and architectures. Perhaps even it is possible to devise models of stock prediction that will allow fully automated investment funds to operate with a higher success than funds reliant on human "expert knowledge".
+
+\blu{You should explicitly state your contribution in the introduction of the paper,}
+
+\section{Related Work}
+
+This is a citation \cite{vapnik1999overview}.
 
 \section{The Data}
 \subsection{Data Cleaning}
@@ -70,7 +84,11 @@
 
 \section{Results}
 
-\section{Conclusions}
+\section{Discussion}
+\blu{State the main conclusions that are obtained from this course project.
+List at least one strength and one weakness of your contribution. Briefly state what you would do with
+more time}
 
-] %end twocolumn
-\end{document} 
+\bibliography{bibliography} 
+
+\end{document}

@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Vapnik(1999)]{vapnik1999overview}
+Vladimir~N Vapnik.
+\newblock An overview of statistical learning theory.
+\newblock \emph{IEEE transactions on neural networks}, 10\penalty0
+  (5):\penalty0 988--999, 1999.
+
+\end{thebibliography}

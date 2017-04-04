@@ -1,54 +1,60 @@
-function [X, y, Xtest, ytest] = loadData()
+function [X, y, names] = loadData(day1, lookback, horizon)
+% uncomment top to read the actual files and extract the data.
+% uncomment bottom to load the mat files from memoty (much faster)
 
-% Loads data
+%[prices, names] = readFiles();
+% save('closing_price_history', 'prices');
+% save('closing_price_history_names', 'names');
+
+load('closing_price_history.mat');
+load('closing_price_history_names');
+
+[n, d] = size(prices);
+
+X = prices(:, day1:day1+lookback-1) ./ prices(:, day1);
+y = prices(:, day1 + lookback + horizon) ./ prices(:, day1);
+
+
+%stats: global t1 = 736034, global td = 736034 + 484
+% TODO: turn these into gregorian calendar dates!
+end
+
+function [price_history, names] = readFiles()
 %%
-n = 100;
-t = 100;
-files = dir('MLFINANCE_data/stock_daily_charts');
+files = dir('../../MLFINANCE_data/stock_daily_charts'); %set path here
+% format: days, o, h, l, c, v
 
-X = zeros(n, 60);
-y = zeros(n, 1);
-Xnames = cell(n,1);
-
-Xtest = zeros(n, 60);
-ytest = zeros(n, 1);
-Xtestnames = cell(n,1);
-
-lookback = 60; %lookback 2 months
-horizon = 14; %predict in 2 weeks
+n = 6393; %enough space
+d = 484;
+price_history = zeros(n, d);
+names = cell(n,1);
 
 j=1;
-for i=1:length(files)
+for i=1:length(files);
 f = files(i); 
 if f.isdir
     continue;
 end
-if (strcmp(f.name(end-3:end), '.txt') == 1) && j <= n+t
+if (strcmp(f.name(end-3:end), '.txt') == 1)
+    
     stock_data = load(strcat(f.folder, '/', f.name));
-    if (size(stock_data,1) > lookback+horizon) % is there enough data?
-        price_history = stock_data(1:lookback,2) ./ stock_data(1,2);
-        future_price = stock_data(lookback+horizon,2) ./ stock_data(1,2);
-        if (j <= n)
-            X(j,:) = price_history;
-            y(j) = future_price;
-            Xnames{j} = f.name;
-            j = j + 1;
-        else
-            Xtest(j-n,:) = price_history;
-            ytest(j-n) = future_price;
-            Xtestnames{j-n} = f.name;
-            j = j + 1;
-        end
+    
+    if (size(stock_data,1) < d) % we need consecutive days in our data
+        continue
     end
+    if (stock_data(1,1) ~= 736034) %start on the right day? FIX!
+        continue;
+    end
+    
+    price_history(j,:) = stock_data(1:d,5);
+    names{j} = f.name(1:end-2);
+    j = j + 1;
 end
 end
-
-% hold on;
-% for i=1:100
-%     plot(1:lookback, Xtest(i,:));
-% end
-
-
+I = find(~any(price_history,2));
+price_history(~any(price_history,2),:) = [];
+names(I) = [];
+price_history(4681,:) = []; %outli<er!
+names(4681) = [];
 end
-
 

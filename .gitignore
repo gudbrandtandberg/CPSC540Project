@@ -3,4 +3,4 @@ Latex/*.aux
 Latex/*.out
 Latex/*.gz
 MLFINANCE_DATA/*
-
+.DS_STORE
