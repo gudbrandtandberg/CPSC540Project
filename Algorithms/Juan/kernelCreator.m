@@ -14,7 +14,7 @@ function func=kernelCreator()
 
 end
 
-function [yhat,conf95]=SE(Xtrain,ytrain,Xtest,l,A,nugget)
+function [yhat,conf95,K,dd]=SE(Xtrain,ytrain,Xtest,l,A,nugget)
 	%Squared Exponential kernel:
 	%K(x,x')=exp(-0.5*||x-x'||^2/l^2)
 	%l is the length parameter
