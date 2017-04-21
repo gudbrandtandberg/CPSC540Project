@@ -6,7 +6,7 @@ close all;
 A=readtable('AXTA.csv');
 Xtrain=linspace(0,1,505)';
 %Xtest=10.3;
-Xtest=linspace(0,1,500)';
+Xtest=linspace(0,1.1,500)';
 
 
 ytrain=table2array(A(:,3));
