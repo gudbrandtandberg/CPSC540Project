@@ -16,8 +16,9 @@ nSectors=length(unique(factor(sectorData$sector)))
 #Creating the plots
 plot(1,type='n',xlab='Horizon',ylab='Up/Down Success Rate',xlim=c(1,15),ylim=c(0,1),
 main='Success Rate Prediction for GPs')
-for (s in 1:nSectors){
+for (s in 10){
 	aux=subset(sectorData,sector==sectorType[s])
 	lines(1:15,aux$prediction,col=s)
 }
+write.csv(aux,'./figures/market_ud_gp.csv')
 legend('topright',sectorType,col=1:nSectors,lty=1,cex=0.7)
